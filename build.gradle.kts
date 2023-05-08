@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "io.github"
+group = "io.github.salat-23"
 version = "1"
 
 repositories {
