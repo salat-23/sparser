@@ -2,6 +2,9 @@ package io.salat.sparser.converters
 
 import io.salat.sparser.ArgumentConverter
 
+/**
+ * Converts string to number value.
+ */
 class NumberConverter : ArgumentConverter() {
     override fun convert(value: String, targetType: Class<*>): Number {
         return when (targetType) {

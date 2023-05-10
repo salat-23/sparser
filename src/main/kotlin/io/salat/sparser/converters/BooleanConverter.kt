@@ -4,6 +4,9 @@ import io.salat.sparser.ArgumentConverter
 import io.salat.sparser.keymaps.KeymapTranslator
 import io.salat.sparser.keymaps.LayoutKeymap
 
+/**
+ * Converts string to boolean value.
+ */
 class BooleanConverter(keymaps: List<LayoutKeymap>) : ArgumentConverter() {
     // hardcoded bool identifiers because why not
     private val booleanTruthIdentifiers = KeymapTranslator.translate(listOf("true", "t"), keymaps, true)

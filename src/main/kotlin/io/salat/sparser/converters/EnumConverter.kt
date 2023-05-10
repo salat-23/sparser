@@ -6,6 +6,9 @@ import io.salat.sparser.ParsingException
 import io.salat.sparser.keymaps.LayoutKeymap
 import io.salat.sparser.annotations.ArgumentSerialized
 
+/**
+ * Converts string to enum value.
+ */
 class EnumConverter(
     private val keymaps: List<LayoutKeymap>
 ): ArgumentConverter() {

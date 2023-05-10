@@ -3,11 +3,12 @@ package io.salat.sparser.annotations
 import io.salat.sparser.keymaps.KeymapTranslator
 import io.salat.sparser.keymaps.LayoutKeymap
 
+/**
+ * Serializes enum entry to be discoverable by parser and allows enum to be used as [Argument].
+ */
 annotation class ArgumentSerialized(
     vararg val identifiers: String
 ) {
-
-    // todo lol
     companion object {
         fun getEnumIdentifierToOrdinalMap(enumType: Class<*>, keymaps: List<LayoutKeymap>): Map<String, Int> {
             val identifierToEnumOrdinal = mutableMapOf<String, Int>()

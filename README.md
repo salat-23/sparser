@@ -8,7 +8,26 @@ Included features:
 - Convert any value using custom converters
 - Default converters work with numbers, strings, booleans and enums
 
-Simple example:
+Add Sparser to your project:
+
+Add this to your pom.xml:
+```xml
+<dependency>
+    <groupId>io.github.salat-23</groupId>
+    <artifactId>sparser</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+or if you are using gradle:
+```groovy
+implementation 'io.github.salat-23:sparser:1.0.0' // groovy dsl
+```
+```kotlin
+implementation("io.github.salat-23:sparser:1.0.0") // kotlin dsl
+```
+
+Simple usage example:
+
 Ideally, command must be a simple POJO with all arguments constructor available.
 
 We have a command object which we must annotate with `@Command`, provide name and description and also provide list of
