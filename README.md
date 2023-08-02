@@ -15,15 +15,15 @@ Add this to your pom.xml:
 <dependency>
     <groupId>io.github.salat-23</groupId>
     <artifactId>sparser</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 or if you are using gradle:
 ```groovy
-implementation 'io.github.salat-23:sparser:1.0.0' // groovy dsl
+implementation 'io.github.salat-23:sparser:1.0.1' // groovy dsl
 ```
 ```kotlin
-implementation("io.github.salat-23:sparser:1.0.0") // kotlin dsl
+implementation("io.github.salat-23:sparser:1.0.1") // kotlin dsl
 ```
 
 Simple usage example:
